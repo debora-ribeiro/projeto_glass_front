@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+    font-family: 'fonte-logo';
+    src: url('../_fonts/bubblegum-sans-regular.otf') ;
+}
+body{
+    background-color: #ddddd;
+    color: rgba(0,0 ,0 , 1);
+    font-family : Arial, sans-serif;
+
+    
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a{
+    color: #blue;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+div#interface{
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+    padding: 10px 10px 10px 10px;
+
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 920px; 
+    top: 60px;
+}
+
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 80px; 
+
+}
+
+header#cabecalho h1{
+    font-family: 'fonte-logo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+table#tabelatecnica{
+    border: 1px solid #606060 ;
+    border-spacing: 0cap;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table#tabelatecnica td{
+    border: 1px #606060 solid ;
+    padding: 10px;
+}
+
+table#tabelatecnica td.ce{
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelatecnica td.cd{
+    background-color: #cecece;
+}
+ table#tabelatecnica caption {
+    color: #606060;
+    font-size: 13pt ;
+    font-weight: bolder;
+ }
+
+ table#tabelatecnica caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+ }
+
+aside#lateral{
+    display: block;
+    width:320px ;
+    float: right;
+    background-color: #dddd;
+    padding: 10pt;
+    margin: 10pt;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+aside#lateral h1{
+    font-family: 'fonte-logo';
+    font-size: 20pt;
+    color: #606060;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5pt;
+
+}
+article#artigo_principal h2{
+    font-size: 13pt;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+    background-color: #dddddd;
+    color: #606060;
+
+}
+
+header#cabecalhodeartigo h1{
+    font-family: 'fonte-logo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+header#cabecalhodeartigo h2{
+    font-size: 12pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+
+}
+
+header#cabecalhodeartigo h3{
+    font-size: 12px;
+    color: #606060;
+}
+
+/* formatação de imagens com legenda */
+figure.foto_legenda{
+    position: relative;
+    border:8px solid white ;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto_legenda img{
+    width: 100%;
+    height: 100%;
+}
+figure.foto_legenda figcaption{
+    opacity: 0%;
+    position:absolute;
+    top: 0px;
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto_legenda:hover figcaption {
+    opacity: 1;
+}
+
+/*formatação menu */
+nav#menu {
+    display: block;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    left: 500px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color:#dddd;
+    padding: 8px;
+    margin: 2px;
+    transition: 1s;
+}
+nav#menu li:hover{
+    background-color: #606060;
+}
+
+nav#menu a{
+    color: #000000;
+    text-decoration: none;
+}
+nav#menu :hover{
+    color: #eff4f7;
+}
+
+nav#menu h1{
+    display: none
+}
+
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
+}
